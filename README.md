@@ -1,1 +1,1 @@
-# Project2
+This is sample repo creating for practice purpose

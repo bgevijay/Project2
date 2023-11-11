@@ -1,6 +1,6 @@
 ---
 name: second script
- on:
+on:
    workflow_dispatch:
      jobs:
       my_simple_code: 
@@ -14,5 +14,5 @@ name: second script
               echo "its working good"
               ls -la
               echo "---------------"
-              
+
        

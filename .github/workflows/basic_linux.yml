@@ -1,0 +1,15 @@
+name: Basic-linux
+on:
+   push:
+     branch:
+       -main
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    -uses: actions/checkout@v3
+    -name: run_multiple_lines
+     run: |
+       ls
+       ls -la
+       date
+       cat /etc/os-release  

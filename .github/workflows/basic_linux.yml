@@ -6,9 +6,18 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     -uses: actions/checkout@v3
+<<<<<<< HEAD
     -name:
       run: |
         ls
         ls -la
         date
         cat /etc/os-release  
+=======
+    -name: run_multiple_lines
+     run: |
+       ls
+       ls -la
+       date
+       cat /etc/os-release  
+>>>>>>> 1d19eb15afbc24b7e1f6f762c20c64afee221544

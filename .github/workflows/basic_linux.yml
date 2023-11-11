@@ -1,15 +1,14 @@
+---
 name: Basic-linux
 on:
-   push:
-     branch:
-       -main
+  workflow_dispatch: null
 jobs:
   runs-on: ubuntu-latest
   steps:
     -uses: actions/checkout@v3
-    -name: run_multiple_lines
-     run: |
-       ls
-       ls -la
-       date
-       cat /etc/os-release  
+    -name:
+      run: |
+        ls
+        ls -la
+        date
+        cat /etc/os-release  

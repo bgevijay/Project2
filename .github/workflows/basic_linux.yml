@@ -1,14 +1,16 @@
----
 name: Basic-linux
 on:
   workflow_dispatch: null
 jobs:
-   runs-on: ubuntu-latest
+  my-job: # Provide a valid name for your job
+    runs-on: ubuntu-latest
     steps:
-    -uses: actions/checkout@v3
-    -name:
-      run: |
-        ls
-        ls -la
-        date
-        cat /etc/os-release  
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Display information
+        run: |
+          ls
+          ls -la
+          date
+          cat /etc/os-release
